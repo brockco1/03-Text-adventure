@@ -12,7 +12,6 @@ def render(game,current):
 
     print('You are in the ' + game['rooms'][current]['name'])
     print(game['rooms'][current]['desc'])
-
 def getInput():
     ''' Asks the user for input and returns a stripped, uppercase version of what they typed '''
 
@@ -32,7 +31,7 @@ def update(response,game,current):
 def main():
 
     game = {}
-    with open('zork (2).json') as json_file:
+    with open('zork(2).json') as json_file:
         game = json.load(json_file)
 
     current = 'WHOUS'
