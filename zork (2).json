@@ -1,0 +1,167 @@
+{
+    "verbs": [
+      { "v": "EXITS",   "map": "EXITS" },
+      { "v": "QUIT",    "map": "QUIT"  },
+      { "v": "NORTH",   "map": "NORTH" },
+      { "v": "N",       "map": "NORTH" },
+      { "v": "SOUTH",   "map": "SOUTH" },
+      { "v": "S",       "map": "SOUTH" },
+      { "v": "EAST",    "map": "EAST"  },
+      { "v": "E",       "map": "EAST"  },
+      { "v": "WEST",    "map": "WEST"  },
+      { "v": "W",       "map": "WEST"  },
+      { "v": "left",    "map": "left"  },
+      { "v": "right",   "map": "right" },
+      { "v": "forward", "map": "forward"},
+      { "v": "backward","map": "backward"}
+    ],
+  
+    "rooms": {
+      "START": {
+        "name": "Starting place",
+        "desc": "This is the place to start!",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "Hom",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "Hom",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "Hom",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "Hom",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "Hom": {
+        "name": "Home",
+        "desc": "You walk in to your house after a long day of work to find that the front door in already open.",
+        "exits": [
+           {
+               "verb":"left",
+               "target": "Kit",
+               "condition": ""
+           },
+           {
+               "verb": "right",
+               "target": "Sto",
+               "condition": ""
+           }
+        ],
+        "inventory": []
+      },
+      "Sto": {
+          "name": "Storage Room",
+          "desc": "You walk in the storage room of the house and find nothing strange in here",
+          "exits": [
+              {
+                  "verb": "left",
+                  "target": "Hom",
+                  "condition": ""
+              }
+          ],
+          "inventory": []
+      },
+      "Kit": {
+          "name": "Kitchen",
+          "desc": "You enter the Kitchen and see blood stains leading to the next room",
+          "exists": [
+              {
+                  "verb": "forward",
+                  "target": "Din",
+                  "condition": ""
+              }
+          ],
+          "inventory": []
+      },
+      "Din": {
+          "name": "Dining Room",
+          "desc": " You walk in the dining room see a small tail of blood on the floor leading into the next room with a handprint on the wall",
+          "exists": [
+              {
+                  "verb": "right",
+                  "target": "Liv",
+                  "condition":""
+              }
+          ],
+          "inventory": []
+      },
+      "Liv":{
+          "name": "Living Room",
+          "desc": "You go into the living room to find that everything is broken and there are holes in the wall right before you leave the room you find a note that just says go forest ",
+          "exists": [
+            {
+              "verb": "forward",
+              "target": "Bed",
+              "conditions":""
+      },
+      {
+          "verb": "left",
+          "target": "Bac",
+          "conditions": ""
+      }
+          ],
+          "inventory": []
+      },
+      "Bed":{
+          "name": "Bed Room",
+          "desc": "You enter your bedroom and find nothing strange in the room",
+          "exits": [
+              {
+                  "verb": "backwards",
+                  "target": "Liv",
+                  "conditions": ""
+              }
+          ],
+          "inventory": []
+      },
+      "Bac": {
+          "name": "Backyard",
+          "desc": " You enter the backyard looking around frantically to find out where she went",
+          "exits":[
+              {
+                  "verb": "forward",
+                  "target": "For",
+                  "conditions": ""
+              },
+              {
+                  "verb":"left", 
+                  "target": "Pou",
+                  "conditions": ""
+              }
+          ],
+          "inventory":[]
+      },
+      "Pou": {
+          "name": "Pound",
+          "desc": "You wounder around outside and come to a pound where nothing is happening",
+          "exits": [
+              {
+                  "verb": "backwards",
+                  "target": "Bac",
+                  "conditions": ""
+              }
+          ],
+          "inventory": []
+      },
+      "For": {
+          "name": "Forest",
+          "desc": "You wounder in the foresst and stumble across your dead wife's body with a pool of blood at your feet",
+          "exits":[],
+          "inventory": []
+      }
+    }
+}
+      
+    
