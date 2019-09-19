@@ -34,7 +34,7 @@ def main():
     with open('zork(2).json') as json_file:
         game = json.load(json_file)
 
-    current = 'WHOUS'
+    current = 'START'
 
     quit = False
 
