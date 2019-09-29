@@ -1,0 +1,46 @@
+Name: Dustin Adkins
+Date: 9/28/2019	
+Project: Text adventure
+Peer's repository: Cortland Brock
+
+
+
+What is something you learned by reviewing your peer's project?
+I learned that I could use portions of words that get the idea
+across while saving space, like kit for kitchen or liv for living room.
+I thought that that may be confusing, but I could extrapolate just fine.
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+There were a larger variety of verbs. I just used cardinal directions, I would like to use
+more if I do this again.
+ 
+
+What suggestions would you have for your peer to improve his/her code?
+Maybe comment more to declare intentions.
+ 
+
+What could have been clearer or better commented?
+Which verbs to use and the descriptions could have been more
+specific rather than just randomly choosing left or right.
+ 
+
+Was there anything in the code that was confusing to you? If so, what?
+The verbs were not consistent, so as a user, I got confused. It switched from
+cardinal directions to left/right.
+
+ 
+
+Does the repository contain an appropriate LICENSE?
+Yes.
+ 
+
+What is something he/she could add to the README.md to make it more descriptive?
+A description of the setting in which the adventure take place. It just says the title
+of the assignment.
+ 
+
+Pay a compliment to your peer based on the quality of his/her code.
+It is very organized and easy to read.
+
+

@@ -31,7 +31,7 @@ def update(response,game,current):
 def main():
 
     game = {}
-    with open('zork(2).json') as json_file:
+    with open('zork (2).json') as json_file:
         game = json.load(json_file)
 
     current = 'START'
